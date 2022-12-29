@@ -1,4 +1,5 @@
 html {
+
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
   min-height: 1000px;
@@ -15,7 +16,7 @@ h1 {
   margin: 50px auto;
   background: white;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -19px 38px 18px 0px rgba(0,0,0,0.1);
 }
 
 #heading {
@@ -93,4 +94,21 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+
+.shimmer-btn {
+  background-image: linear-gradient(
+    -60deg,
+    transparent, transparent 40%,
+    #FFFFFF44 40%, #FFFFFF44 60%,
+    transparent 60%, transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+}
+.shimmer-btn:hover {
+  background-position-x: -150%;
+  transition: background-position-x 600ms;
 }

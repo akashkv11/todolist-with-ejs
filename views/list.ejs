@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
     <title>Todo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="box" id="heading">
-        <h1><%= kindOfDay %> </h1>
+        <h1>
+            <%= kindOfDay %>
+        </h1>
 
     </div>
 
@@ -17,25 +21,28 @@
 
 
 
-    
+
     <div class="box">
-    
+
         <% for(var i=0;i<newItems.length;i++) {%>
             <div class="item">
                 <input type="checkbox">
-                <p><%= newItems[i] %></p> 
+                <p>
+                    <%= newItems[i] %>
+                </p>
             </div>
 
 
-                <% } %> 
-                
+            <% } %>
 
-            
-                
+
+
+
                 <form action="/" method="post" class="item">
                     <input type="text" name="newItem" placeholder="New item" autocomplete="off">
-                    <button type="submit">+</button>  
+                    <button type="submit" class="shimmer-btn">+</button>
                 </form>
     </div>
 </body>
+
 </html>
